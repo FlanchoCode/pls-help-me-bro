@@ -1,0 +1,268 @@
+:root {
+    --color-1: #2f3240
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #e8eef3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+/* Header */
+/* Header */
+/* Header */
+/* Header */
+
+.header {
+    background-color: var(--color-1);
+    padding:12px 0;
+    line-height: 1.7;
+}
+
+.header .logo,
+.header .nav {
+    padding: 0 15px;
+}
+
+.header .logo a {
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.header .nav ul li a{
+    display: block ;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 10px 0;
+    transition: all 0.5s ease;
+}
+.header .nav ul li a.active,
+.header .nav ul li a:hover {
+    color: #f3a93d
+}
+
+
+/* home */
+/* home */
+/* home */
+/* home */
+/* home */
+/* home */
+/* home */
+
+.home-text {
+    margin: 15px auto;
+    padding: 20px;
+    font-size: 30px;
+    display: flex;
+    text-align: justify;
+    /* align-self: center; */
+    flex-wrap: wrap;
+    width: 900px;
+    /* border: 1px solid black; */
+    /* word-wrap: normal; */
+    margin-left: 170px;
+}
+
+/* .home-text b {
+    background-image: linear-gradient(90deg,blue, red);
+    background-size: 100% 3px;
+    background-repeat: repeat;
+    background-position: left bottom;
+} */
+
+
+
+
+/* WAVE LINE */
+/* WAVE LINE */
+/* WAVE LINE */
+/* WAVE LINE */
+/* WAVE LINE */
+
+
+.wave {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(wave.svg);
+    top: 700px;
+    background-repeat: no-repeat;
+}
+
+.bg-color{
+    width: 100%;
+    height: 100%;
+    background-color: #0099ff;
+    position: absolute  ;
+    top: 840px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Path */
+/* Container Path */
+/* Container Path */
+/* Container Path */
+/* Container Path */
+
+
+.container-path {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-path .box {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container-path .box .img-bx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    clip-path: circle(400px at center 100px);
+    transition: 0.5s ease-in-out;
+    /* transition-delay: 0.5s; */
+}
+
+.container-path .box:hover .img-bx {
+    
+    clip-path: circle(80px at center 100px);
+}
+
+.container-path .box:hover .img-bx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-path .box .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.container-path .box .content h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container-path .box .content a {
+    text-decoration: none;
+    background: #000;
+    color: #ffffff;
+    margin: 4px;
+    margin-left: 55px;
+    margin-top: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+}
+
+.container-path .box .content a,
+.container-path .box .content h2,
+.container-path .box .content p {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transform: translateY(20px);
+}
+
+.container-path .box:hover .content a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.8s;
+}
+.container-path .box:hover .content h2 {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.4s;
+}
+.container-path .box:hover .content p {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+}
+
+.wave1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(wave-two.svg);
+    top: 1690px;
+    background-repeat: no-repeat;
+    /* transform: rotate(180deg); */
+}
+
+/* Separador De Olas e Imagenes */
+/* Separador De Olas e Imagenes */
+/* Separador De Olas e Imagenes */
+/* Separador De Olas e Imagenes */
+/* Separador De Olas e Imagenes */
+
+
+.space {
+    width: 20px;
+    border: 1px solid #000000;
+}
